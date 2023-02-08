@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr778__sw_dataverse_tests",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr778__sw_dataverse_test",
+    "Name": "0831_SW_DATAVERSE_TEST",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr778__sw_dataverse_test_AsyncOperations": "System Jobs",
+      "cr778__sw_dataverse_test_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr778__sw_dataverse_test_DuplicateBaseRecord": "Duplicate Records (cr778__sw_dataverse_test_DuplicateBaseRecord)",
+      "cr778__sw_dataverse_test_DuplicateMatchingRecord": "Duplicate Records (cr778__sw_dataverse_test_DuplicateMatchingRecord)",
+      "cr778__sw_dataverse_test_FileAttachments": "FileAttachments",
+      "cr778__sw_dataverse_test_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr778__sw_dataverse_test_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr778__sw_dataverse_test_ProcessSession": "Process Sessions",
+      "cr778__sw_dataverse_test_SyncErrors": "Sync Errors",
+      "cr778__sw_dataverse_testid": "0831_SW_DATAVERSE_TEST",
+      "cr778_approve2": "Approve2",
+      "cr778_name": "Name",
+      "cr778_status": "Approve1",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "0831_SW_DATAVERSE_TEST",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "0831_SW_DATAVERSE_TEST (뷰)",
+    "Name": "_cr778__sw_dataverse_test_views",
+    "RelatedEntityName": "0831_SW_DATAVERSE_TEST",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1452669a-73a4-4d9d-bc9c-befa64d88bac": "0831_SW_DATAVERSE_TEST Lookup View",
+      "26be62d3-262b-45a5-9190-3d77d1722781": "Inactive 0831_SW_DATAVERSE_TEST",
+      "bf9ffba5-5948-42f4-beb7-62e3da6f5220": "0831_SW_DATAVERSE_TEST Associated View",
+      "ea428aac-3209-48a1-8a94-5dfae2fe79d6": "Active 0831_SW_DATAVERSE_TEST",
+      "efbcd192-ff07-411b-a83f-457110e9ac46": "0831_SW_DATAVERSE_TEST Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (0831_SW_DATAVERSE_TEST)",
+    "Name": "cr778__sw_dataverse_test_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "0831_SW_DATAVERSE_TEST"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "0831_SW_DATAVERSE_TEST",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (0831_SW_DATAVERSE_TEST)",
+    "Name": "cr778__sw_dataverse_test_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "0831_SW_DATAVERSE_TEST"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "0831_SW_DATAVERSE_TEST",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,176 @@
+Screen1 As screen:
+
+    Button1 As button:
+        OnSelect: |-
+            =ClearCollect(Kanto,{ID:1 , Value:"이상해씨"},{ID:0 , Value:Blank()},{ID:4, Value:"파이리"},{ID:7, Value:"꼬부기"})
+        Text: ="단추"
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    Label1 As label:
+        Height: =60
+        Text: |-
+            ="First : "
+        Width: =350
+        X: =382
+        Y: =30
+        ZIndex: =2
+
+    Label1_1 As label:
+        Height: =60
+        Text: |-
+            ="Last : "
+        Width: =350
+        X: =382
+        Y: =80
+        ZIndex: =3
+
+    Label1_2 As label:
+        Height: =60
+        Text: |-
+            ="First(Last2 : "
+        Width: =350
+        X: =382
+        Y: =140
+        ZIndex: =4
+
+    Label1_3 As label:
+        Height: =60
+        Text: |-
+            ="Last(First2 : "
+        Width: =350
+        X: =382
+        Y: =200
+        ZIndex: =5
+
+    Label2 As label:
+        Text: =First(Kanto).Value
+        X: =692
+        Y: =40
+        ZIndex: =6
+
+    Label2_1 As label:
+        Text: =Last(Kanto).Value
+        X: =692
+        Y: =90
+        ZIndex: =7
+
+    Label2_2 As label:
+        Text: =First(LastN(Kanto,2)).Value
+        X: =692
+        Y: =150
+        ZIndex: =8
+
+    Label2_3 As label:
+        Height: =54
+        Text: =Concat(Kanto,Value,",")
+        X: =692
+        Y: =263
+        ZIndex: =9
+
+    Label1_4 As label:
+        Height: =60
+        Text: ="concat"
+        Width: =350
+        X: =382
+        Y: =260
+        ZIndex: =10
+
+    Label2_4 As label:
+        Text: =Last(FirstN(Kanto,2)).Value
+        X: =692
+        Y: =210
+        ZIndex: =11
+
+    Label1_5 As label:
+        Height: =60
+        Text: ="concat"
+        Width: =350
+        X: =382
+        Y: =320
+        ZIndex: =12
+
+    Label2_5 As label:
+        Height: =54
+        Text: =Concat(Trim(Kanto,),Value,",")
+        X: =692
+        Y: =320
+        ZIndex: =13
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =415
+        Items: =Kanto
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =140
+        X: =12
+        Y: =213
+        ZIndex: =14
+
+        Image1 As image:
+            Height: =128
+            OnSelect: =Select(Parent)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image1.Width - 104
+            X: =Image1.X + Image1.Width + 24
+            Y: =44
+            ZIndex: =2
+
+        Subtitle1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title1.Width
+            X: =Title1.X
+            Y: =Title1.Y + Title1.Height + 4
+            ZIndex: =3
+
+        NextArrow1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Reset(Checkbox1)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="항목 세부 정보 보기"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Checkbox1 As checkbox:
+            OnSelect: =Select(Parent)
+            Text: ="옵션"
+            X: =402
+            Y: =50
+            ZIndex: =6
+

@@ -1,0 +1,46 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-12-08T17:53:19.0380000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{FilenameWithExtension}": "파일 이름(확장명 포함)",
+      "{FullPath}": "전체 경로",
+      "{Identifier}": "ID ({Identifier})",
+      "{IsCheckedOut}": "체크 아웃",
+      "{IsFolder}": "폴더",
+      "{Link}": "항목 링크",
+      "{ModerationComment}": "이 목록 항목의 콘텐츠 승인과 관련된 메모",
+      "{ModerationStatus}": "콘텐츠 승인 상태",
+      "{Name}": "이름",
+      "{Path}": "폴더 경로",
+      "{Thumbnail}": "Thumbnail",
+      "{TriggerWindowEndToken}": "트리거 창 끝 토큰",
+      "{TriggerWindowStartToken}": "트리거 창 시작 토큰",
+      "{VersionNumber}": "버전 번호",
+      "Author": "만든 사람",
+      "Author#Claims": "만든 사람 Claims",
+      "CheckoutUser": "체크 아웃한 사용자",
+      "CheckoutUser#Claims": "체크 아웃한 사용자 Claims",
+      "ComplianceAssetId": "자산 ID 규정 준수",
+      "Created": "만든 날짜",
+      "Editor": "수정한 사람",
+      "Editor#Claims": "수정한 사람 Claims",
+      "ID": "ID",
+      "MediaServiceLocation": "Location",
+      "Modified": "수정된 날짜",
+      "OData__DisplayName": "민감도",
+      "OData__ExtendedDescription": "설명",
+      "Title": "제목"
+    },
+    "DatasetName": "https://dexconsultingnet.sharepoint.com/sites/0311_",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "gunpla",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

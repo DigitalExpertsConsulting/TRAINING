@@ -1,0 +1,80 @@
+Screen5 As screen:
+
+    "Gallery6 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =442
+        Items: ='0831_SW_DATAVERSE_TEST'
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =40
+        Width: =1038
+        X: =25
+        Y: =205
+        ZIndex: =1
+
+        Subtitle6 As label:
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Created On'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =352
+            ZIndex: =3
+
+        Separator6 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Subtitle6_1 As label:
+            Height: =38
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Modified On'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =313
+            X: =352
+            ZIndex: =6
+
+        Subtitle6_2 As label:
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                =Text(DateDiff(ThisItem.'Created On',ThisItem.'Modified On'))&" d"&Text(Time(0, 0, DateDiff(ThisItem.'Created On',ThisItem.'Modified On',Seconds)), "[$-en-US]  hh:mm:ss")
+            VerticalAlign: =VerticalAlign.Top
+            Width: =226
+            X: =718
+            ZIndex: =7
+
+    Label4 As label:
+        Text: ="시작날짜"
+        Width: =323
+        X: =25
+        Y: =165
+        ZIndex: =2
+
+    Label4_1 As label:
+        Text: |-
+            ="종료날짜
+            "
+        Width: =323
+        X: =369
+        Y: =165
+        ZIndex: =3
+
+    Label4_2 As label:
+        Text: ="소요시간"
+        Width: =269
+        X: =728
+        Y: =165
+        ZIndex: =4
+

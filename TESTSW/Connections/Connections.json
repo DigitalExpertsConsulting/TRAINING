@@ -1,0 +1,34 @@
+{
+  "23cdf0b2-866f-4ed2-afe6-1d2b8c49785c": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://dexconsultingnet.sharepoint.com/sites/0311_": {
+        "dataSources": {
+          "gunpla": {
+            "tableName": "e440fe94-b31b-410b-90d6-1b7de41b144f"
+          },
+          "메뉴얼 & 양식": {
+            "tableName": "651fd697-5d5d-49d5-9108-a7ab47206c02"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "메뉴얼 & 양식",
+      "gunpla"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "23cdf0b2-866f-4ed2-afe6-1d2b8c49785c"
+  }
+}
